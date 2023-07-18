@@ -1,47 +1,31 @@
 package javalab;
+import java.util.*;
 
-import java.util.Scanner;
+public class lexico {
 
-
-
-public class Lexi{
-	
-	public void lexi(String Arr[])
-	{
-		for(int i = 0; i < 5; ++i) 
+	public static void main(String[] args) {
+		/*to accept 5 strings from user and print them in lexicographical order*/
+		Scanner sc= new Scanner(System.in);
+		String[] ls = new String[5];
+		System.out.println("Enter 5 strings: ");
+		ls[0]=sc.next();	
+		ls[1]=sc.next();
+		ls[2]=sc.next();
+		ls[3]=sc.next();
+		ls[4]=sc.next();
+		int i;
+		System.out.println("Order of input: ");
+		for(i=0;i<5;i++)
 		{
-			for (int j = i + 1; j < 5; ++j) 
-			{
-				if (Arr[i].compareTo(Arr[j]) > 0) 
-				{
-					String temp = Arr[i];
-					Arr[i] = Arr[j];
-					Arr[j] = temp;
-				}
-			}
+			System.out.print(ls[i]+ ", ");
 		}
-		System.out.println("The 5 elements are ");
-		for(int i=0;i<5;i++)
+		System.out.println();
+		Arrays.sort(ls);
+		System.out.println("Lexico order: ");
+		for(i=0;i<5;i++)
 		{
-			System.out.print(" "+ Arr[i]+" ");
+			System.out.print(ls[i]+ ", ");
 		}
-	}
-
-	public static void main(String args[])
-	{
-
-		Scanner sc=new Scanner(System.in);
-		String Arr[]=new String[5];
-		System.out.println("Enter 5 element");
-		for(int i=0;i<5;i++)
-		{
-			Arr[i]=sc.next();
-		}
-	
-		Lexi obj=new Lexi();
-
-		obj.lexi(Arr);
-		sc.close();
 	}
 
 }
