@@ -1,50 +1,41 @@
 package javalab;
-import java.util.Scanner;
-//import java.util.concurrent.Callable;
-interface A
-{
-interface B
-{
-public int callMe(int sum);
-}
-}
 
-public class happyno implements A
+import java.util.*;
+interface yes{
+int checkHappyNumber(int number);
+}
+class Happy implements yes {
+public int checkHappyNumber(int number)
 {
-int fin1=0;
-int sum=0;
+int rem = 0, sum = 0;
+while(number > 0)
+{
+rem = number %10;
+sum = sum+(rem*rem);
+number = number/10;
+}
+return sum;
+}
+}
+public class happynumber{
 public static void main(String[] args)
 {
-Scanner in=new Scanner(System.in);
-System.out.print("Enter the number to be tested as happy or unhappy : ");
-int num=(int)Math.pow(in.nextInt(), 2);
-System.out.println(num);
-happyno p=new happyno();
-while(num>9)
+Happy ob=new Happy();
+Scanner sc = new Scanner (System.in);
+System.out.print("Enter a non-zero Positive Number:");
+int number = sc.nextInt( );
+int result = number;
+while (result != 1 && result != 4)
 {
-System.out.println(p.callMe(num));
-num=p.callMe(num);
+result = ob.checkHappyNumber(result);
 }
-if(num==1)
-System.out.println("Its a happy number : )");
+if (result ==1)
+{
+System.out.println ("It is a Happy Number");
+}
 else
-
-System.out.println("Its unhappy :(");
-
-}
-public int callMe(int sum)
 {
-int fin=0;
-String temp=Integer.toString(sum);
-int len=temp.length();
-for(int i=0;i<len;i++)
-{
-System.out.println("1 : " +(int)Math.pow(sum%10,2));
-fin=fin+(int)Math.pow(sum%10,2);
-sum=sum/10;
+System.out.println (" It is not a Happy Number");
 }
-sum=fin;
-return sum;
-
 }
 }
