@@ -1,26 +1,25 @@
-//to implement exception handling methods
-
 package javalab;
 
+package raj;
+//to implement exception handling methods
 import java.util.*;
-public class employeeId
+public class employee 
 {
 	public static void main(String args[])
 	{
 		Scanner sc=new Scanner(System.in);
 		
-		int empID[]= {1001,1002,1003,1004,1005};
-		String[] empname= {"Karthik","Sushanth","Rohan","Sharan","Skhanda"};
-		String[] date= {"01/01/2003","11/02/2004","19/03/2003","20/5/2003","07/07/2003"};
-		char empcode[]= {'m','c','e','r','k'};
-		String dept[]= {"Engg","PM","R&d","Front desk","acct"};
-		double basic[]= {50000,30000,20000,12000,10000};
-		double[] HRA= {20000,12000,8000,6000,8000};
-		double[] IT= {20000,9000,3000,2000,1000};
-		
-		char[] desigcode= {'e','c','m','r','k'};
-		String[] designation= {"Engineer","Consultant","Manager","Receptionist","Clerk"};
-		double[] DA={20000,32000,40000,15000,12000};
+		int[] empId={1001,1002,1003,1004,1005,1006,1007};
+		String[] empname={"Abc","Opqr","Ghi","Wxyz","Jklmn","Stuv","Def"};
+		String[] date={"01/04/2009","23/08/2012","12/11/2008","29/01/2013","16/07/2005","01/01/2000","12/06/2006"};
+		char[] empcode={'e','c','k','r','m','e','c'};
+		String[] deptt={"R&D","PM","Acct","FrontDesk","Engg","Manufacturing","PM"};
+		double[] basic={20000,30000,10000,12000,50000,23000,29000};
+		double[] HRA={8000,12000,8000,6000,20000,9000,12000};
+		double[] IT={3000,9000,1000,2000,20000,4400,10000};
+		char[] desigcode={'e','c','k','r','m'};
+		String[] designation={"Engineer","Consultant","Clerk","Receptionist","Manager"};
+		double[] DA={20000,32000,12000,15000,40000};
 		
 		System.out.println("Enter the employee ID:");
 		int id=sc.nextInt();
