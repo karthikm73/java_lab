@@ -1,6 +1,5 @@
 package javalab;
 
-package raj;
 //to implement exception handling methods
 import java.util.*;
 public class employee 
