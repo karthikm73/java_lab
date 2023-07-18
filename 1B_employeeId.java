@@ -1,5 +1,4 @@
 package javalab;
-
 import java.util.*;
 public class employee 
 {
@@ -7,11 +6,11 @@ public class employee
 	{
 		Scanner sc=new Scanner(System.in);
 		
-		int[] empId={1001,1002,1003,1004,1005,1006,1007};
+		int[] empID={1001,1002,1003,1004,1005,1006,1007};
 		String[] empname={"Abc","Opqr","Ghi","Wxyz","Jklmn","Stuv","Def"};
 		String[] date={"01/04/2009","23/08/2012","12/11/2008","29/01/2013","16/07/2005","01/01/2000","12/06/2006"};
 		char[] empcode={'e','c','k','r','m','e','c'};
-		String[] deptt={"R&D","PM","Acct","FrontDesk","Engg","Manufacturing","PM"};
+		String[] dept={"R&D","PM","Acct","FrontDesk","Engg","Manufacturing","PM"};
 		double[] basic={20000,30000,10000,12000,50000,23000,29000};
 		double[] HRA={8000,12000,8000,6000,20000,9000,12000};
 		double[] IT={3000,9000,1000,2000,20000,4400,10000};
