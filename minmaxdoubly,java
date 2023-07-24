@@ -3,8 +3,6 @@
 package javalab;
 
 public class minmaxdoubly{  
-    
-  
     class Node{  
         int data;  
         Node previous;  
@@ -56,11 +54,7 @@ public class minmaxdoubly{
               
             min = head.data;  
             while(current != null) {  
-                 
-  
-                
-  
-                if(min > current.data)  
+                 if(min > current.data)  
                     min = current.data;  
                 current = current.next;  
             }  
@@ -73,9 +67,7 @@ public class minmaxdoubly{
         
         Node current = head;  
         int max;  
-  
-        
-        if(head == null) {  
+       if(head == null) {  
             System.out.println("List is empty");  
             return 0;  
         }  
