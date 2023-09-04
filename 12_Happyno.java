@@ -25,7 +25,7 @@ Scanner sc = new Scanner (System.in);
 System.out.print("Enter a non-zero Positive Number:");
 int number = sc.nextInt( );
 int result = number;
-while (result != 1 && result != 7)
+while (result != 1 && result != 4)
 {
 result = ob.checkHappyNumber(result);
 }
